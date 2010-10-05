@@ -18,7 +18,6 @@ function LiveStatsClient() {
             });
 
             self.client.subscribe('/stat', function(message) {
-                console.log(message);
                 self.drawMarker(message);
             });
         });
