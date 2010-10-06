@@ -30,7 +30,13 @@ function LiveStatsClient() {
         position: location,
         map: map
     });
-    marker.setTitle("kishore")    
+    marker.setTitle(message.place);    
+    var infowindow = new google.maps.InfoWindow({
+        content: message.content
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
     };
 
     this.init();
