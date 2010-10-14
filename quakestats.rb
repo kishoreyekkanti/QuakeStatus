@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'net/http'
 require "json"
-require 'xml-simple'
+require 'xmlsimple'
 
 get "/earthquakes" do
   hash  = XmlSimple.xml_in(Net::HTTP.get_response(URI.parse('http://earthquake.usgs.gov/earthquakes/catalogs/1day-M2.5.xml')).body)
