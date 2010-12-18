@@ -2,4 +2,4 @@ Quake Status app will show you the places on the world map where the earth quake
 Installation:
 Run server.js or run_dev_server.js
 Run quakestas.rb
-open localhost:4567
+open localhost:8000
